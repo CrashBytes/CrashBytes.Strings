@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>CrashBytes.Strings</RootNamespace>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>CrashBytes.Strings</PackageId>
+    <Authors>CrashBytes</Authors>
+    <Company>CrashBytes</Company>
+    <Copyright>Copyright (c) 2026 CrashBytes</Copyright>
+    <Description>Lightweight string extension methods for .NET — slug generation, case conversion, masking, truncation, and more.</Description>
+    <PackageTags>string;extensions;slug;mask;truncate;case-conversion;utility</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/CrashBytes/CrashBytes.Strings</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CrashBytes/CrashBytes.Strings</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Symbol packages for source debugging -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="5.*" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
