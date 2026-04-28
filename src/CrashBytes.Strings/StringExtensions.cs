@@ -360,7 +360,8 @@ public static class StringExtensions
         if (string.IsNullOrEmpty(value))
             return value;
 
-        return Regex.Replace(value, @"<[^>]*>", string.Empty);
+        var result = Regex.Replace(value, @"<[^>]*>", " ");
+        return Regex.Replace(result, @" {2,}", " ").Trim();
     }
 
     /// <summary>
