@@ -702,7 +702,7 @@ public class StripHtmlTests
     [Fact]
     public void StripHtml_SelfClosingTags_Removed()
     {
-        Assert.Equal("HelloWorld", "Hello<br />World".StripHtml());
+        Assert.Equal("Hello World", "Hello<br />World".StripHtml());
     }
 }
 
